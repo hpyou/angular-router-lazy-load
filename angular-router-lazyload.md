@@ -44,7 +44,7 @@ export class ButtonDemoModule {
 
 ![](/assets/angular_lazy_load.gif)
 
-### 路由懒加载是如何打包的
+### webpack是如何打包的
 
 在使用angular-cli构建的angular项目中，angular-cli是使用了webpack进行打包的，先看看webpack是如何实现懒加载的。
 
@@ -188,7 +188,7 @@ __webpack_require__.e = function requireEnsure(chunkId) {
 }
 ```
 
-### angular-cli打包
+### angular-cli是如何的打包
 
 angular-cli里面对webpack进行了定制化开发，不同于前面说的使用require.ensure进行切片打包，angular-cli让webpack识别router里的'loadChildren'关键字进行打包。让我们来看看打包后的文件。
 
